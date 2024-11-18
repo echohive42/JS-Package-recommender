@@ -1,0 +1,39 @@
+.recording-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    margin-right: 8px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.loading-wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 40px;
+}
+
+.loading-bar {
+    width: 4px;
+    height: 18px;
+    background: #7c3aed;
+    animation: wave 1s ease-in-out infinite;
+}
+
+.loading-bar:nth-child(2) { animation-delay: 0.1s; }
+.loading-bar:nth-child(3) { animation-delay: 0.2s; }
+.loading-bar:nth-child(4) { animation-delay: 0.3s; }
+
+@keyframes wave {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(2); }
+    100% { transform: scaleY(1); }
+} 

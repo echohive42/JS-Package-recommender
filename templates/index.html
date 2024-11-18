@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Advisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+</head>
+<body class="min-h-screen bg-base-300">
+    <div class="container mx-auto max-w-7xl px-4 py-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h1 class="card-title text-3xl mb-6">JavaScript Library Advisor</h1>
+                
+                <div class="flex items-center gap-4 mb-6">
+                    <button id="startRecording" class="btn btn-primary">
+                        <span class="recording-icon"></span>
+                        Start Recording
+                    </button>
+                    <div id="recordingStatus" class="hidden">
+                        <div class="loading-wave">
+                            <div class="loading-bar"></div>
+                            <div class="loading-bar"></div>
+                            <div class="loading-bar"></div>
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="transcription" class="mb-6 min-h-[100px] p-4 bg-base-200 rounded-lg hidden"></div>
+
+                <div id="recommendations" class="w-full"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/ui.js') }}"></script>
+    <script src="{{ url_for('static', path='js/speech.js') }}"></script>
+</body>
+</html> 
