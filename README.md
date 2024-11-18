@@ -1,6 +1,6 @@
-# JavaScript Package Suggester Web App
+# JavaScript Package Suggester Web App with Groq API and live voice inputs
 
-An intuitive web application that helps developers find the right JavaScript packages for their projects using AI-powered recommendations.
+An intuitive web application that helps developers find the right JavaScript packages for their projects using AI-powered recommendations. Uses Groq API
 
 > **Get the Advanced Version!** 
 > The enhanced version with memory management and multiple project history tracking is available on my Patreon. By becoming a patron, you'll get access to 350+ LLM projects and my 1000x Cursor Course!
@@ -28,9 +28,9 @@ An intuitive web application that helps developers find the right JavaScript pac
    ```
    pip install -r requirements.txt
    ```
-3. Create a `.env` file with your OpenAI API key:
+3. Create a `.env` file with your GROQ API key:
    ```
-   OPENAI_API_KEY=your_api_key_here
+   GROQ_API_KEY=your_api_key_here
    ```
 
 ## Running the Web App
